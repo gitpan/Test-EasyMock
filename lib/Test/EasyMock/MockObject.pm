@@ -13,12 +13,12 @@ Test::EasyMock::MockObject - Mock object.
 =head2 isa($module)
 
 Mock to I<isa> method.
-    
+
 =cut
 # Override
 sub isa {
-    # TODO: expect $B;~$N0z?t$K(B eq $B$d(B not(eq(...)) $B$r;H$($k$h$&$K$J$j<!Bh(B
-    #       and_stub_return $B$H$7$FDj5A$9$k(B
+    # TODO: expect 時の引数に eq や not(eq(...)) を使えるようになり次第
+    #       and_stub_return として定義する
     my ($self, $module) = @_;
     return unless $module;
 
@@ -28,10 +28,20 @@ sub isa {
     return $module eq $self_module;
 }
 
+=head2 can($method)
+
+Mock to I<can> method.
+
+=cut
+sub can {
+    my $self = shift;
+    return $self->{_control}->process_method_invocation($self, 'can', @_);
+}
+
 =head2 AUTOLOAD
 
 Mock to any method.
-    
+
 =cut
 sub AUTOLOAD {
     our $AUTOLOAD;
