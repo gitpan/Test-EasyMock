@@ -1,13 +1,15 @@
+Build.PL
 Changes
+LICENSE
+META.json
+README.md
+cpanfile
 lib/Test/EasyMock.pm
 lib/Test/EasyMock/Expectation.pm
 lib/Test/EasyMock/ExpectationSetters.pm
 lib/Test/EasyMock/MockControl.pm
 lib/Test/EasyMock/MockObject.pm
-Makefile.PL
-MANIFEST
-META.yml
-README
+minil.toml
 t/00.load.t
 t/01.total.t
 t/02.create_mock_with_module_name.t
@@ -17,3 +19,5 @@ t/05.mock_to_special_method.t
 t/perlcritic.t
 t/pod-coverage.t
 t/pod.t
+META.yml
+MANIFEST

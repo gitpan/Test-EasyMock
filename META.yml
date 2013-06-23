@@ -1,30 +1,63 @@
---- #YAML:1.0
-name:               Test-EasyMock
-version:            0.03
-abstract:           A mock library which is usable easily.
+---
+abstract: 'A mock library which is usable easily.'
 author:
-    - keita iseki <keita.iseki+cpan@gmail.com>
-license:            unknown
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'keita iseki C<< <keita.iseki+cpan at gmail.com> >>'
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    Carp:           0
-    Data::Dumper:   0
-    Exporter:       0
-    List::Util:     0
-    Scalar::Util:   0
-    Test::Builder:  0.98
-    Test::More:     0.98
-    Test::Tester:   0.108
-    version:        0
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+  Test::More: 0.98
+  Test::Perl::Critic: 1.02
+  Test::Pod: 1.14
+  Test::Pod::Coverage: 1.04
+  Test::Tester: 0.108
+configure_requires:
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.5.3, CPAN::Meta::Converter version 2.120921'
+license: perl
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Test-EasyMock
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+provides:
+  Test::EasyMock:
+    file: lib/Test/EasyMock.pm
+    version: 0.04
+  Test::EasyMock::Expectation:
+    file: lib/Test/EasyMock/Expectation.pm
+    version: 0
+  Test::EasyMock::ExpectationSetters:
+    file: lib/Test/EasyMock/ExpectationSetters.pm
+    version: 0
+  Test::EasyMock::MockControl:
+    file: lib/Test/EasyMock/MockControl.pm
+    version: 0
+  Test::EasyMock::MockObject:
+    file: lib/Test/EasyMock/MockObject.pm
+    version: 0
+requires:
+  Carp: 0
+  Data::Dumper: 0
+  Exporter: 0
+  List::MoreUtils: 0
+  List::Util: 0
+  Scalar::Util: 0
+  Test::Builder: 0.98
+  Test::More: 0.98
+  perl: 5.008001
+resources:
+  bugtracker: https://github.com/NetPenguin/perl-test-easymock/issues
+  homepage: https://github.com/NetPenguin/perl-test-easymock
+  repository: git://github.com/NetPenguin/perl-test-easymock.git
+version: 0.04
+x_contributors:
+  - 'keita.iseki <keita.iseki@gmail.com>'
