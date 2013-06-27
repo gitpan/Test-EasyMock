@@ -31,7 +31,7 @@ no_index:
 provides:
   Test::EasyMock:
     file: lib/Test/EasyMock.pm
-    version: 0.04
+    version: 0.05
   Test::EasyMock::Expectation:
     file: lib/Test/EasyMock/Expectation.pm
     version: 0
@@ -58,6 +58,6 @@ resources:
   bugtracker: https://github.com/NetPenguin/perl-test-easymock/issues
   homepage: https://github.com/NetPenguin/perl-test-easymock
   repository: git://github.com/NetPenguin/perl-test-easymock.git
-version: 0.04
+version: 0.05
 x_contributors:
   - 'keita.iseki <keita.iseki@gmail.com>'
