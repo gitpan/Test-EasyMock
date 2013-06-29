@@ -1,5 +1,9 @@
 Revision history for Perl extension Test-EasyMock
 
+0.06 2013-06-29T11:20:47Z
+
+  * Add arguments matcher feature.
+
 0.05 2013-06-27T14:05:19Z
 
   * Move some test to xt/.

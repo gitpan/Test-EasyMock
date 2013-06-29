@@ -5,6 +5,7 @@ META.json
 README.md
 cpanfile
 lib/Test/EasyMock.pm
+lib/Test/EasyMock/ArgumentsMatcher.pm
 lib/Test/EasyMock/Expectation.pm
 lib/Test/EasyMock/ExpectationSetters.pm
 lib/Test/EasyMock/MockControl.pm
