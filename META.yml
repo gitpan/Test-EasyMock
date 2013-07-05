@@ -12,7 +12,7 @@ configure_requires:
   Module::Build: 0.38
   perl: 5.008_001
 dynamic_config: 0
-generated_by: 'Minilla/v0.5.3, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Minilla/v0.5.5, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -30,23 +30,19 @@ no_index:
 provides:
   Test::EasyMock:
     file: lib/Test/EasyMock.pm
-    version: 0.06
+    version: 0.07
   Test::EasyMock::ArgumentsMatcher:
     file: lib/Test/EasyMock/ArgumentsMatcher.pm
-    version: 0
   Test::EasyMock::Expectation:
     file: lib/Test/EasyMock/Expectation.pm
-    version: 0
   Test::EasyMock::ExpectationSetters:
     file: lib/Test/EasyMock/ExpectationSetters.pm
-    version: 0
   Test::EasyMock::MockControl:
     file: lib/Test/EasyMock/MockControl.pm
-    version: 0
   Test::EasyMock::MockObject:
     file: lib/Test/EasyMock/MockObject.pm
-    version: 0
 requires:
+  Data::Dump: 0
   Data::Util: 0
   List::Util: 0
   Scalar::Util: 0
@@ -57,6 +53,6 @@ resources:
   bugtracker: https://github.com/NetPenguin/perl-test-easymock/issues
   homepage: https://github.com/NetPenguin/perl-test-easymock
   repository: git://github.com/NetPenguin/perl-test-easymock.git
-version: 0.06
+version: 0.07
 x_contributors:
-  - 'NetPenguin <keita.iseki@gmail.com>'
+  - 'keita.iseki <keita.iseki@gmail.com>'
