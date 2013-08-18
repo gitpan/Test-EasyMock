@@ -6,9 +6,11 @@ README.md
 cpanfile
 lib/Test/EasyMock.pm
 lib/Test/EasyMock/ArgumentsMatcher.pm
+lib/Test/EasyMock/Class.pm
 lib/Test/EasyMock/Expectation.pm
 lib/Test/EasyMock/ExpectationSetters.pm
 lib/Test/EasyMock/MockControl.pm
+lib/Test/EasyMock/MockControl/Class.pm
 lib/Test/EasyMock/MockObject.pm
 minil.toml
 t/00.load.t
@@ -17,6 +19,9 @@ t/02.create_mock_with_module_name.t
 t/03.unexpected_method_call.t
 t/04.create_mock_with_object.t
 t/05.mock_to_special_method.t
+t/06.create_class_mock.t
+t/Foo.pm
+t/Util.pm
 xt/perlcritic.t
 xt/pod-coverage.t
 xt/pod.t

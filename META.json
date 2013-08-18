@@ -4,7 +4,7 @@
       "keita iseki C<< <keita.iseki+cpan at gmail.com> >>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.5.5",
+   "generated_by" : "Minilla/v0.5.6",
    "license" : "perl_5",
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -33,12 +33,15 @@
       },
       "develop" : {
          "requires" : {
+            "CPAN::Uploader" : "0",
+            "Minilla" : "0",
             "Test::CPAN::Meta" : "0",
             "Test::MinimumVersion" : "0.10108",
             "Test::Perl::Critic" : "0",
             "Test::Pod" : "1.41",
             "Test::Pod::Coverage" : "0",
-            "Test::Spellunker" : "v0.2.7"
+            "Test::Spellunker" : "v0.2.7",
+            "Version::Next" : "0"
          }
       },
       "runtime" : {
@@ -49,12 +52,15 @@
             "Scalar::Util" : "0",
             "Test::Builder" : "0",
             "Test::Deep::NoTest" : "0",
+            "Test::MockModule" : "0",
+            "parent" : "0",
             "version" : "0"
          }
       },
       "test" : {
          "requires" : {
             "List::MoreUtils" : "0",
+            "Test::Deep" : "0",
             "Test::More" : "0",
             "Test::Tester" : "0"
          }
@@ -63,10 +69,13 @@
    "provides" : {
       "Test::EasyMock" : {
          "file" : "lib/Test/EasyMock.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       },
       "Test::EasyMock::ArgumentsMatcher" : {
          "file" : "lib/Test/EasyMock/ArgumentsMatcher.pm"
+      },
+      "Test::EasyMock::Class" : {
+         "file" : "lib/Test/EasyMock/Class.pm"
       },
       "Test::EasyMock::Expectation" : {
          "file" : "lib/Test/EasyMock/Expectation.pm"
@@ -76,6 +85,9 @@
       },
       "Test::EasyMock::MockControl" : {
          "file" : "lib/Test/EasyMock/MockControl.pm"
+      },
+      "Test::EasyMock::MockControl::Class" : {
+         "file" : "lib/Test/EasyMock/MockControl/Class.pm"
       },
       "Test::EasyMock::MockObject" : {
          "file" : "lib/Test/EasyMock/MockObject.pm"
@@ -88,11 +100,11 @@
       },
       "homepage" : "https://github.com/NetPenguin/perl-test-easymock",
       "repository" : {
-         "url" : "git://github.com/NetPenguin/perl-test-easymock.git",
+         "url" : "https://github.com/NetPenguin/perl-test-easymock.git",
          "web" : "https://github.com/NetPenguin/perl-test-easymock"
       }
    },
-   "version" : "0.07",
+   "version" : "0.08",
    "x_contributors" : [
       "keita.iseki <keita.iseki@gmail.com>"
    ]
