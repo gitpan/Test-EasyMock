@@ -31,7 +31,7 @@ no_index:
 provides:
   Test::EasyMock:
     file: lib/Test/EasyMock.pm
-    version: 0.09
+    version: 0.10
   Test::EasyMock::ArgumentsMatcher:
     file: lib/Test/EasyMock/ArgumentsMatcher.pm
     version: 0
@@ -67,6 +67,6 @@ resources:
   bugtracker: https://github.com/NetPenguin/perl-test-easymock/issues
   homepage: https://github.com/NetPenguin/perl-test-easymock
   repository: https://github.com/NetPenguin/perl-test-easymock.git
-version: 0.09
+version: 0.10
 x_contributors:
-  - 'keita.iseki <keita.iseki@gmail.com>'
+  - 'NetPenguin <keita.iseki@gmail.com>'

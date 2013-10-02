@@ -1,7 +1,7 @@
 package Test::EasyMock;
 use strict;
 use warnings;
-use version; our $VERSION = '0.09';
+use version; our $VERSION = '0.10';
 
 =head1 NAME
 
@@ -153,6 +153,14 @@ Add scalar result to the expectation.
 
 Add array result to the expectation.
 
+=item and_list_return(@values)
+
+Add list result to the expectation.
+
+=item and_answer($code)
+
+Add code to the expectation, it calculate an answer.
+
 =item and_die([$message])
 
 Add I<die> behavior to the expectation.
@@ -164,6 +172,14 @@ Set scalar result as a stub to the expectation.
 =item and_stub_array_return(@values)
 
 Set array result as a stub to the expectation.
+
+=item and_stub_list_return(@values)
+
+Set list result as a stub to the expectation.
+
+=item and_stub_answer($code)
+
+Add code as a stub to the expectation, it calculate an answer.
 
 =item and_stub_die([$message])
 
